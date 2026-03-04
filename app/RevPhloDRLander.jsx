@@ -160,9 +160,7 @@ export default function RevPhloDRLander() {
         i.head.appendChild(a);
       }
       if (!v[d].initialized) {
-        if (!vli) {
-          v[y][vl] = v[y][vl] || [];
-        }
+        if (!vli) { v[y][vl] = v[y][vl] || []; }
         v[d].initialized = 1;
       }
     })(window, document, 'Vidalytics', 'vidalytics_embed_qY0sZQMIwMDYGr3T', 'https://fast.vidalytics.com/embeds/Xbxuo1Sw/qY0sZQMIwMDYGr3T/');
@@ -204,9 +202,9 @@ export default function RevPhloDRLander() {
 
       {/* HERO */}
       <section style={{
-        minHeight: "100vh", display: "flex", flexDirection: "column",
-        alignItems: "center", justifyContent: "center", textAlign: "center",
-        padding: isMobile ? "100px 20px 60px" : "130px 24px 80px",
+        display: "flex", flexDirection: "column",
+        alignItems: "center", textAlign: "center",
+        padding: isMobile ? "80px 20px 48px" : "88px 24px 52px",
         position: "relative", overflow: "hidden", background: T.bg,
       }}>
         <div style={{
@@ -223,10 +221,10 @@ export default function RevPhloDRLander() {
         <Reveal>
           <div style={{
             display: "inline-flex", alignItems: "center", gap: 8,
-            padding: "6px 14px 6px 10px", borderRadius: 100,
+            padding: "5px 12px 5px 9px", borderRadius: 100,
             background: T.white, border: `1px solid ${T.border}`,
-            fontSize: 12, fontWeight: 500, color: T.text2,
-            marginBottom: 32, boxShadow: "0 1px 4px rgba(0,0,0,0.05)",
+            fontSize: 11, fontWeight: 500, color: T.text2,
+            marginBottom: 16, boxShadow: "0 1px 4px rgba(0,0,0,0.05)",
             position: "relative",
           }}>
             <span style={{ width: 6, height: 6, borderRadius: "50%", background: T.green, boxShadow: "0 0 6px rgba(16,185,129,0.5)" }} />
@@ -237,27 +235,27 @@ export default function RevPhloDRLander() {
         <Reveal delay={0.1}>
           <h1 style={{
             fontFamily: "'DM Serif Display', Georgia, serif",
-            fontSize: isMobile ? "clamp(36px,10vw,48px)" : "clamp(44px,5.5vw,64px)",
-            lineHeight: 1.06, letterSpacing: -2,
-            color: T.dark, maxWidth: 720, marginBottom: 22,
+            fontSize: isMobile ? "clamp(28px,8vw,36px)" : "clamp(32px,3.2vw,44px)",
+            lineHeight: 1.1, letterSpacing: -1.5,
+            color: T.dark, maxWidth: 640, marginBottom: 12,
           }}>
-            Your sales team is{" "}
-            <em style={{ fontStyle: "italic", color: T.blue }}>leaking revenue</em>
-            {" "}and {"you're"} blind to it.
+            You{"'"}re running a{" "}
+            <em style={{ fontStyle: "italic", color: T.blue }}>7-figure sales team</em>
+            {" "}off a Google Sheet.
           </h1>
         </Reveal>
 
-        <Reveal delay={0.2}>
-          <p style={{ fontSize: isMobile ? 16 : 18, color: T.text2, lineHeight: 1.65, maxWidth: 520, margin: "0 auto 44px" }}>
-            Watch how high-ticket teams are replacing broken spreadsheets and manual EOD reports with real-time sales intelligence — without changing a single tool in their stack.
+        <Reveal delay={0.15}>
+          <p style={{ fontSize: isMobile ? 14 : 15, color: T.text2, lineHeight: 1.6, maxWidth: 500, margin: "0 auto 20px" }}>
+            Watch how high-ticket teams replace broken spreadsheets and manual EOD reports with real-time sales intelligence — without changing a single tool.
           </p>
         </Reveal>
 
-        <Reveal delay={0.3} style={{ width: "100%", maxWidth: 800, margin: "0 auto", position: "relative" }}>
+        <Reveal delay={0.2} style={{ width: "100%", maxWidth: 760, margin: "0 auto" }}>
           <div style={{
-            borderRadius: 14, overflow: "hidden",
+            borderRadius: 12, overflow: "hidden",
             border: `1px solid ${T.border}`,
-            boxShadow: "0 24px 64px rgba(51,97,255,0.08), 0 4px 16px rgba(0,0,0,0.04)",
+            boxShadow: "0 16px 48px rgba(51,97,255,0.08), 0 2px 8px rgba(0,0,0,0.04)",
             background: "#0a0a0a", aspectRatio: "16/9",
             display: "flex", alignItems: "center", justifyContent: "center",
           }}>
@@ -265,19 +263,19 @@ export default function RevPhloDRLander() {
           </div>
         </Reveal>
 
-        <Reveal delay={0.45}>
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 12, marginTop: 44 }}>
+        <Reveal delay={0.3}>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 10, marginTop: 20 }}>
             <a href="#apply-form" style={{
               display: "inline-flex", alignItems: "center", gap: 8,
-              padding: "15px 34px", fontSize: 15, fontWeight: 700,
-              color: "#fff", background: T.blue, borderRadius: 10,
+              padding: "13px 30px", fontSize: 14, fontWeight: 700,
+              color: "#fff", background: T.blue, borderRadius: 9,
               textDecoration: "none",
-              boxShadow: `0 4px 20px ${T.blueGlow}`,
+              boxShadow: `0 4px 16px ${T.blueGlow}`,
               width: isMobile ? "100%" : "auto", justifyContent: "center",
             }}>
               Apply for a Free Demo <span style={{ opacity: 0.7 }}>→</span>
             </a>
-            <span style={{ fontSize: 12, color: T.text3, letterSpacing: "0.02em" }}>Free 20-min demo · No commitment · Qualified teams only</span>
+            <span style={{ fontSize: 11, color: T.text3, letterSpacing: "0.02em" }}>Free 20-min demo · No commitment · Qualified teams only</span>
           </div>
         </Reveal>
       </section>
@@ -292,10 +290,10 @@ export default function RevPhloDRLander() {
               fontSize: "clamp(28px,4vw,44px)", lineHeight: 1.1, letterSpacing: -1,
               color: T.dark, maxWidth: 520, marginBottom: 0,
             }}>
-              {"You're"} running a 7-figure sales operation on spreadsheets.
+              Every day without real data is revenue {"you'll"} never get back.
             </h2>
             <p style={{ fontSize: 16, color: T.text2, marginTop: 12 }}>
-              And {"it's"} costing you more than you think.
+              Here{"'"}s exactly where {"it's"} leaking.
             </p>
           </Reveal>
           <div style={{ marginTop: 48 }}>
