@@ -166,13 +166,6 @@ export default function RevPhloDRLander() {
     })(window, document, 'Vidalytics', 'vidalytics_embed_qY0sZQMIwMDYGr3T', 'https://fast.vidalytics.com/embeds/Xbxuo1Sw/qY0sZQMIwMDYGr3T/');
   }, []);
 
-  useEffect(() => {
-    const s = document.createElement("script");
-    s.src = "https://embed.typeform.com/next/embed.js";
-    s.async = true;
-    document.body.appendChild(s);
-    return () => { try { document.body.removeChild(s); } catch(e) {} };
-  }, []);
 
   return (
     <div style={{ fontFamily: "'DM Sans', sans-serif", background: T.bg, color: T.dark, WebkitFontSmoothing: "antialiased", overflowX: "hidden" }}>
@@ -520,7 +513,7 @@ export default function RevPhloDRLander() {
               border: `1px solid ${T.blueBorder}`,
               boxShadow: `0 8px 32px ${T.blueGlow}`,
             }}>
-              <div data-tf-widget="01KAT373J0V85ZJSJANAS65PEP" style={{ width: "100%", height: 500 }} />
+              <iframe src="https://form.typeform.com/to/01KAT373J0V85ZJSJANAS65PEP" style={{ width: "100%", height: 560, border: "none", borderRadius: 8 }} allow="camera; microphone; autoplay; encrypted-media;" />
             </div>
             <p style={{ fontSize: 12, color: T.text3, marginTop: 16, textAlign: "center", letterSpacing: "0.02em" }}>
               Takes 60 seconds · {"We'll"} reach out within 24 hours if you qualify
