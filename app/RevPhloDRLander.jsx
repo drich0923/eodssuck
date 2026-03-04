@@ -249,10 +249,9 @@ export default function RevPhloDRLander() {
             borderRadius: 12, overflow: "hidden",
             border: `1px solid ${T.border}`,
             boxShadow: "0 16px 48px rgba(51,97,255,0.08), 0 2px 8px rgba(0,0,0,0.04)",
-            background: "#0a0a0a", aspectRatio: "16/9",
-            display: "flex", alignItems: "center", justifyContent: "center",
+            background: "#000",
           }}>
-            <p style={{ color: "rgba(255,255,255,0.15)", fontSize: 12, fontFamily: "monospace", letterSpacing: "0.05em" }}>VSL</p>
+            <div id="vidalytics_embed_qY0sZQMIwMDYGr3T" style={{ width: "100%", aspectRatio: "16/9", minHeight: 300 }} />
           </div>
         </Reveal>
 
