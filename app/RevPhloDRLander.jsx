@@ -519,9 +519,8 @@ export default function RevPhloDRLander() {
               background: T.white, borderRadius: 16, overflow: "hidden",
               border: `1px solid ${T.blueBorder}`,
               boxShadow: `0 8px 32px ${T.blueGlow}`,
-              minHeight: 120, display: "flex", alignItems: "center", justifyContent: "center",
             }}>
-              <div data-tf-live="01KAT373J0V85ZJSJANAS65PEP" />
+              <div data-tf-widget="01KAT373J0V85ZJSJANAS65PEP" style={{ width: "100%", height: 500 }} />
             </div>
             <p style={{ fontSize: 12, color: T.text3, marginTop: 16, textAlign: "center", letterSpacing: "0.02em" }}>
               Takes 60 seconds · {"We'll"} reach out within 24 hours if you qualify
