@@ -144,6 +144,38 @@ export default function RevPhloDRLander() {
     return () => window.removeEventListener("resize", check);
   }, []);
 
+  useEffect(() => {
+    (function (v, i, d, a, l, y, t, i2, c, s) {
+      y = '_' + d.toLowerCase(); c = d + 'L';
+      if (!v[d]) { v[d] = {}; }
+      if (!v[c]) { v[c] = {}; }
+      if (!v[y]) { v[y] = {}; }
+      var vl = 'Loader', vli = v[y][vl], vsl = v[c][vl + 'Script'], vlf = v[c][vl + 'Loaded'], ve = 'Embed';
+      if (!vsl && !vlf) {
+        v[c][vl + 'Script'] = 1;
+        a = i.createElement('script');
+        a.type = 'text/javascript';
+        a.async = 1;
+        a.src = l;
+        i.head.appendChild(a);
+      }
+      if (!v[d].initialized) {
+        if (!vli) {
+          v[y][vl] = v[y][vl] || [];
+        }
+        v[d].initialized = 1;
+      }
+    })(window, document, 'Vidalytics', 'vidalytics_embed_qY0sZQMIwMDYGr3T', 'https://fast.vidalytics.com/embeds/Xbxuo1Sw/qY0sZQMIwMDYGr3T/');
+  }, []);
+
+  useEffect(() => {
+    const s = document.createElement("script");
+    s.src = "https://embed.typeform.com/next/embed.js";
+    s.async = true;
+    document.body.appendChild(s);
+    return () => { try { document.body.removeChild(s); } catch(e) {} };
+  }, []);
+
   return (
     <div style={{ fontFamily: "'DM Sans', sans-serif", background: T.bg, color: T.dark, WebkitFontSmoothing: "antialiased", overflowX: "hidden" }}>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -491,7 +523,7 @@ export default function RevPhloDRLander() {
               boxShadow: `0 8px 32px ${T.blueGlow}`,
               minHeight: 120, display: "flex", alignItems: "center", justifyContent: "center",
             }}>
-              <p style={{ color: T.text3, fontSize: 13 }}>[ Typeform loads here ]</p>
+              <div data-tf-live="01KAT373J0V85ZJSJANAS65PEP" />
             </div>
             <p style={{ fontSize: 12, color: T.text3, marginTop: 16, textAlign: "center", letterSpacing: "0.02em" }}>
               Takes 60 seconds · {"We'll"} reach out within 24 hours if you qualify
